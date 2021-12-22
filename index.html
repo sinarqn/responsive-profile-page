@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive | Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href=
+            "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <section class="profile" id="profile">
+        <div class="navbar">
+            <h1 class="logo"><img src="images/logo.png">
+                <a href="index.html">PhotoTherapy</a> </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li class="dropdown">
+                        <a class="drop-btn">Features
+                            <i class="bi bi-caret-down-fill"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">Feature1</a>
+                            <a href="#">Feature2</a>
+                            <a href="#">Feature3</a>
+                        </div>
+                    </li>
+                    <li><a href="#">About Us</a> </li>
+                    <li><a href="index.html" class="active">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="left card">
+            <img src="images/profile.jpg">
+            <h2>Sina Jhp</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur volutpat cursus magna, nec rhoncus dolor posuere sit
+                amet. Fusce gravida sapien facilisis ex tincidunt sodales. Phasellus
+                ullamcorper varius diam eget
+            </p>
+            <ul>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+        <div class="right card">
+            <ul>
+                <li><a href="#" class="tablinks active" onclick="openTab(event, 'shots')">Shots</a> </li>
+                <li><a href="#" class="tablinks" onclick="openTab(event, 'likes')">Likes</a> </li>
+                <li><a href="#" class="tablinks" onclick="openTab(event, 'saves')">Saves</a> </li>
+            </ul>
+            <div class="posts tabcontent" id="shots">
+                <a href="#"><img src="https://picsum.photos/id/200/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/234/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/295/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/267/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/230/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/232/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/234/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/217/200"></a>
+            </div>
+            <div class="posts tabcontent" id="likes">
+                <a href="#"><img src="https://picsum.photos/id/211/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/214/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/212/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/213/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/215/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/216/200"></a>
+            </div>
+            <div class="posts tabcontent" id="saves">
+                <a href="#"><img src="https://picsum.photos/id/218/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/219/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/220/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/244/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/225/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/236/200"></a>
+                <a href="#"><img src="https://picsum.photos/id/227/200"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="user-activity" id="user-activity">
+        <h1>User Activity Here</h1>
+        <div class="footer">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Likes</a> </li>
+                    <li><a href="#">Services</a> </li>
+                    <li><a href="#">Shots</a> </li>
+                    <li><a href="#">About Us</a> </li>
+                    <li><a href="#">Contact Us</a> </li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Likes</a> </li>
+                    <li><a href="#">Services</a> </li>
+                    <li><a href="#">Shots</a> </li>
+                    <li><a href="#">About Us</a> </li>
+                    <li><a href="#">Contact Us</a> </li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Likes</a> </li>
+                    <li><a href="#">Services</a> </li>
+                    <li><a href="#">Shots</a> </li>
+                    <li><a href="#">About Us</a> </li>
+                    <li><a href="#">Contact Us</a> </li>
+                </ul>
+            </div>
+            <div class="footer-form">
+                <h3>Subscribe Newsletter</h3>
+                <form>
+                    <input type="text" name="name" placeholder="Type your Email...">
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("posts");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "grid";
+        evt.currentTarget.className += " active";
+    }
+</script>
