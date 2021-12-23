@@ -208,8 +208,6 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     text-align: left;
-    align-content: center;
-    align-items: center;
     color: #fff;
     padding: 10px;
     border-radius: var(--primary-raduis);
@@ -223,6 +221,15 @@ img{
 .footer a:hover{
     color: #fff;
 }
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.footer-form h3{
+    margin-left: 0;
+}
+
 .footer form{
     display: flex;
 }
